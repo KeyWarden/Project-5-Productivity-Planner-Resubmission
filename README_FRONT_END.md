@@ -1,4 +1,4 @@
-# PROJECT NAME TO GO HERE
+# PROJECT 5 - PRODUCTIVITY PLANNER 'PROPLANX' FRONT-END
 
 👩🏻‍💻 View an example of this section [here](https://github.com/kera-cudmore/Bully-Book-Club#bully-book-club-website)
 
@@ -170,7 +170,7 @@ The Credits section is where you can credit all the people and sources you used 
 
 ### Code Used
 
-If you have used some code in your project that you didn't write, this is the place to make note of it. Credit the author of the code and if possible a link to where you found the code. You could also add in a brief description of what the code does, or what you are using it for here.
+Most of the code for my front-end was originally written for my inital submission in another repository, which can be found [here](https://github.com/KeyWarden/Project-5-Productivity-Planner/tree/main).
 
 ### Content
 

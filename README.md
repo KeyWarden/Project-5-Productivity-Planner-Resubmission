@@ -166,7 +166,7 @@ Use this part of the README to link to your TESTING.md file - you can view the e
 
 ### Code Used
 
-Most of the code for my back-end was originall written for my inital submission in another repository, which can be found [here](https://github.com/KeyWarden/Project-5-Productivity-Planner/tree/main).
+Most of the code for my back-end was originally written for my inital submission in another repository, which can be found [here](https://github.com/KeyWarden/Project-5-Productivity-Planner/tree/main).
 
 ### Content
 
