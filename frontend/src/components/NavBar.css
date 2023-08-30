@@ -1,3 +1,9 @@
 .NavBar-bg {
     background-color: lightgray;
 }
+
+.NavBar-text > a {
+    color: gray;
+    margin-left: 5px;
+    margin-right: 5px;
+}

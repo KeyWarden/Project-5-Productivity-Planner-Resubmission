@@ -1,0 +1,54 @@
+.Row {
+    height: calc(100vh - 81px);
+}
+.Input {
+    background: #ffffff;
+    border: 1px solid silver;
+    box-sizing: border-box;
+    border-radius: 2px;
+    color: #7177a1;
+    text-align: center;
+    padding: 10px;
+}
+  
+.Header {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 5px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: black;
+}
+
+.Content {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    margin-top: 10px;
+    border: 3px solid silver;
+}
+  
+.Link {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+  
+.Link span {
+    color: #ff9254;
+}
+  
+.Container {
+    padding: 30px 10px;
+}
+  
+.SignInCol {
+    height: 320px;
+}

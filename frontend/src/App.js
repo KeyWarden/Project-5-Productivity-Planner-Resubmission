@@ -4,6 +4,10 @@ import React, {useState, useEffect} from 'react';
 import './App.css';
 import Tasks from './Tasks';
 import NavBar from './components/NavBar';
+import Container from 'react-bootstrap/Container';
+import {Route,Switch} from 'react-router-dom';
+import './api/axiosDefaults';
+import SignUpForm from './pages/auth/SignUpForm';
 
 function App() {
   // const [isUser, changeStatus] = useState()
@@ -14,11 +18,18 @@ function App() {
         <p>Pro<span className='Title2'>Plan</span><span className='Title3'>X</span></p>
         <NavBar />
       </header>
-      <div className='App-content'>
-        <p>When not logged in, this will contain an intoduction to the app for new users, as well as the log in</p>
-        <p>When logged in, it will default to the Tasks app. Depnding on chosen feature, it will direct to other apps</p>
-        <Tasks />
-      </div>
+      <Container>
+        <div className='App-content'>
+          <Switch>
+            <Route exact path="/" render={() => <h1>Home</h1>} />
+            <Route exact path="/tasks" render={() => <Tasks />} />
+            <Route exact path="/groups" render={() => <h1>Groups</h1>} />
+            <Route exact path="/signin" render={() => <h1>Sign-In</h1>} />
+            <Route exact path="/signup" render={() => <SignUpForm />} />
+            <Route render={() => <p>Page not Found!</p>} />
+          </Switch>
+        </div>
+      </Container>
       <footer className='App-footer'>
         <h3>Contact Details</h3>
         <p>Phone Number: 01234 56789</p>

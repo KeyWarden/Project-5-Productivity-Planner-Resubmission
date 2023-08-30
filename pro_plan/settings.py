@@ -99,7 +99,7 @@ CORS_ALLOWED_ORIGINS = [
     os.environ.get('CLIENT_ORIGIN')
 ]
 
-CORS_ALLOW_CREDENTIALS = True
+# CORS_ALLOW_CREDENTIALS = True
 
 ROOT_URLCONF = 'pro_plan.urls'
 

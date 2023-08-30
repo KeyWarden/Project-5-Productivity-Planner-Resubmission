@@ -170,7 +170,9 @@ The Credits section is where you can credit all the people and sources you used 
 
 ### Code Used
 
-Most of the code for my front-end was originally written for my inital submission in another repository, which can be found [here](https://github.com/KeyWarden/Project-5-Productivity-Planner/tree/main).
+Some of the code for my front-end was originally written for my inital submission in another repository, which can be found [here](https://github.com/KeyWarden/Project-5-Productivity-Planner/tree/main).
+
+I also made use of code from the Moments Walkthrough Project.
 
 ### Content
 

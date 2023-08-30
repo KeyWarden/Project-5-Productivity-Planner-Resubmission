@@ -39,7 +39,7 @@
   margin-right: 10%;
   border: 3px solid silver;
   font-size: calc(10px + 1vmin);
-  color: white;
+  color: black;
 }
 
 .App-footer > p {
@@ -63,13 +63,4 @@
 
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
