@@ -27,9 +27,6 @@ REST_FRAMEWORK = {
         if 'DEV' in os.environ
         else 'dj_rest_auth.jwt_auth.JWTCookieAuthentication'
     )],
-    'DEFAULT_PAGINATION_CLASS':
-    'rest_framework.pagination.PageNumberPagination',
-    'PAGE_SIZE': 10,
     'DATETIME_FORMAT': '%d %m %Y',
 }
 if 'DEV' not in os.environ:
@@ -59,6 +56,7 @@ DEBUG = 'DEBUG' in os.environ
 ALLOWED_HOSTS = [
     '8000-keywarden-project5produ-n9grukdx067.ws-eu104.gitpod.io',
     os.environ.get('ALLOWED_HOST'),
+    'localhost',
 ]
 
 

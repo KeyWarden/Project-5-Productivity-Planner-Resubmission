@@ -3,6 +3,7 @@ import React, {useState, useEffect} from 'react';
 // import axios from 'axios';
 import './App.css';
 import Tasks from './Tasks';
+import NavBar from './components/NavBar';
 
 function App() {
   // const [isUser, changeStatus] = useState()
@@ -11,9 +12,7 @@ function App() {
     <div className="App">
       <header className='App-header'>
         <p>Pro<span className='Title2'>Plan</span><span className='Title3'>X</span></p>
-        <nav>
-          plan is, this will link to Profile, log-out, Tasks, and Groups, but only if you are logged in.
-        </nav>
+        <NavBar />
       </header>
       <div className='App-content'>
         <p>When not logged in, this will contain an intoduction to the app for new users, as well as the log in</p>
