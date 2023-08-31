@@ -8,9 +8,9 @@ class Task(models.Model):
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-    due_at = models.DateField(null=False, blank=False)
+    due_at = models.DateField(null=True, blank=True)
     title = models.CharField(max_length=255, blank=False)
-    description = models.TextField(blank=False)
+    description = models.TextField(blank=True)
 
     class Meta:
         ordering = ['due_at']
