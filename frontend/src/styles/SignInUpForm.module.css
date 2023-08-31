@@ -24,7 +24,7 @@
 }
 
 .Content {
-    background-color: #ffffff;
+    background-color: lightblue;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,7 +42,7 @@
 }
   
 .Link span {
-    color: #ff9254;
+    color: red;
 }
   
 .Container {

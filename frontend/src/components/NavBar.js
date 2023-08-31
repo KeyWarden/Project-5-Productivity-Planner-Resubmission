@@ -1,14 +1,19 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 import './NavBar.css';
 import { NavLink } from 'react-router-dom';
-import { CurrentUserContext } from '../App';
+import { useCurrentUser } from '../contexts/CurrentUserContext';
 
 const NavBar = () => {
-  const currentUser = useContext(CurrentUserContext)
-  const loggedInLinks = <>{currentUser?.username}</>
+  const currentUser = useCurrentUser();
+  const loggedInLinks = (
+    <>
+      <NavLink to="/tasks">Tasks</NavLink>
+      <NavLink to="/groups">Groups</NavLink>
+    </>
+  )
   const loggedOutLinks = (
     <>
       <NavLink to="/signin">Sign-In</NavLink>
@@ -24,8 +29,6 @@ const NavBar = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto NavBar-text">
               <NavLink exact to="/">Home</NavLink>
-              <NavLink to="/tasks">Tasks</NavLink>
-              <NavLink to="/groups">Groups</NavLink>
               {currentUser ? loggedInLinks : loggedOutLinks}
             </Nav>
           </Navbar.Collapse>
