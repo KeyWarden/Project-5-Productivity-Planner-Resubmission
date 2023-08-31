@@ -4,14 +4,33 @@ import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 import './NavBar.css';
 import { NavLink } from 'react-router-dom';
-import { useCurrentUser } from '../contexts/CurrentUserContext';
+import { useCurrentUser, useSetCurrentUser } from '../contexts/CurrentUserContext';
+import axios from 'axios';
 
 const NavBar = () => {
   const currentUser = useCurrentUser();
+  const setCurrentUser = useSetCurrentUser();
+
+  const handleSignOut = async () => {
+    try {
+      await axios.post('dj-rest-auth/logout/');
+      setCurrentUser(null);
+    } catch (err) {
+      console.log(err)      
+    }
+  };
+
   const loggedInLinks = (
     <>
       <NavLink to="/tasks">Tasks</NavLink>
       <NavLink to="/groups">Groups</NavLink>
+      <NavLink
+       to="/"
+       onClick={handleSignOut}
+      >
+        Sign-Out
+      </NavLink>
+      {currentUser?.username}
     </>
   )
   const loggedOutLinks = (

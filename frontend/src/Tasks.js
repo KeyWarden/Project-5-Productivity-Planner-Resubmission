@@ -1,3 +1,5 @@
+import { Button } from 'react-bootstrap';
+import btnStyles from "./styles/Button.module.css";
 import './Tasks.css';
 
 function Tasks() {
@@ -13,6 +15,7 @@ function Tasks() {
                     <td>Delete Task</td>
                 </tr>
             </table>
+            <Button className={`${btnStyles.Button}`} variant="primary" href="/tasks/create">Add Task</Button>
         </div>
     )
 }
