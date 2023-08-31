@@ -8,6 +8,7 @@ import Container from 'react-bootstrap/Container';
 import {Route,Switch} from 'react-router-dom';
 import './api/axiosDefaults';
 import SignUpForm from './pages/auth/SignUpForm';
+import SignInForm from './pages/auth/SignInForm';
 
 function App() {
   // const [isUser, changeStatus] = useState()
@@ -24,7 +25,7 @@ function App() {
             <Route exact path="/" render={() => <h1>Home</h1>} />
             <Route exact path="/tasks" render={() => <Tasks />} />
             <Route exact path="/groups" render={() => <h1>Groups</h1>} />
-            <Route exact path="/signin" render={() => <h1>Sign-In</h1>} />
+            <Route exact path="/signin" render={() => <SignInForm />} />
             <Route exact path="/signup" render={() => <SignUpForm />} />
             <Route render={() => <p>Page not Found!</p>} />
           </Switch>
