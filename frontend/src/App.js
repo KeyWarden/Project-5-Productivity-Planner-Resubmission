@@ -9,6 +9,7 @@ import './api/axiosDefaults';
 import SignUpForm from './pages/auth/SignUpForm';
 import SignInForm from './pages/auth/SignInForm';
 import TaskCreateForm from './pages/tasks/TaskCreateForm';
+import Groups from './Groups';
 
 
 
@@ -26,7 +27,8 @@ function App() {
             <Route exact path="/" render={() => <h1>Home</h1>} />
             <Route exact path="/tasks" render={() => <Tasks />} />
             <Route exact path="/tasks/create" render={() => <TaskCreateForm />} />
-            <Route exact path="/groups" render={() => <h1>Groups</h1>} />
+            <Route exact path="/groups" render={() => <Groups />} />
+            <Route exact path="/groups/create" render={() => <Groups />} />
             <Route exact path="/signin" render={() => <SignInForm />} />
             <Route exact path="/signup" render={() => <SignUpForm />} />
             <Route render={() => <p>Page not Found!</p>} />

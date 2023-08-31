@@ -8,7 +8,7 @@ import Container from "react-bootstrap/Container";
 import styles from "../../styles/TaskGroupCreateEditForm.module.css";
 import btnStyles from "../../styles/Button.module.css";
 import { useHistory } from "react-router-dom";
-import { axiosReq } from "../../api/axiosDefaults";
+// import { axiosReq } from "../../api/axiosDefaults";
 import { Alert } from "react-bootstrap";
 
 function TaskCreateForm() {
@@ -36,8 +36,8 @@ function TaskCreateForm() {
         formData.append('title', title)
 
         try {
-            const {data} = await axiosReq.post('/tasks/', formData);
-            history.push(`/tasks/${data.id}`)
+            // const {data} = await axiosReq.post('/tasks/', formData);
+            history.push(`/tasks`)
         } catch (err) {
             setErrors(err.response?.data)
         }

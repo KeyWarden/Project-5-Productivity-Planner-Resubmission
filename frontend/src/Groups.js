@@ -1,17 +1,13 @@
+import { Button } from 'react-bootstrap';
+import btnStyles from "./styles/Button.module.css";
 import './Groups.css';
+import GroupsPage from './pages/groups/GroupsPage';
 
 function Groups() {
     return (
         <div>
-            <table class="my-auto mx-auto p-2 bg-info col-md-12 table-responsive-md">
-                <tr class="table table-striped table-borderless">
-                    <td>Task</td>
-                    <td>Group Size</td>
-                    <td>View Group</td>
-                    <td>Edit Group</td>
-                    <td>Delete Group</td>
-                </tr>
-            </table>
+            <GroupsPage />
+            <Button className={`${btnStyles.Button}`} variant="primary" href="/groups/create">Add Group</Button>
         </div>
     )
 }

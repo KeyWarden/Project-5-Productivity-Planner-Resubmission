@@ -42,6 +42,18 @@
   color: black;
 }
 
+.Container {  
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 3px solid silver;
+}
+
 .App-footer > p {
   margin-top: 3px;
   margin-bottom: 1px;
