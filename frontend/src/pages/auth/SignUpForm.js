@@ -17,9 +17,9 @@ const SignUpForm = () => {
   const [signUpData, setSignUpData] = useState({
     username: '',
     password: '',
-    passwordConfirm: ''
+    password2: ''
   });
-  const { username, password, passwordConfirm } = signUpData;
+  const { username, password1, password2 } = signUpData;
 
   const [errors, setErrors] = useState({});
 
@@ -35,8 +35,8 @@ const SignUpForm = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      await axios.post('/dj-rest-auth/registration/', signUpData)
-      history.push('/signin')
+      await axios.post('/dj-rest-auth/registration/', signUpData);
+      history.push("/signin");
     } catch(err) {
       setErrors(err.response?.data)
     }
@@ -59,43 +59,43 @@ const SignUpForm = () => {
                       onChange={handleChange}
                     />
                 </Form.Group>
-                {errors.username?.map((message, idx) =>
+                {errors.username?.map((message, idx) => (
                   <Alert variant="warning" key={idx}>{message}</Alert>
-                )}
-                <Form.Group controlId="password">
+                ))}
+                <Form.Group controlId="password1">
                     <Form.Label className="d-none">password</Form.Label>
                     <Form.Control
                       className={styles.Input}
                       type="password"
                       placeholder="Password"
-                      name="password"
-                      value={password}
+                      name="password1"
+                      value={password1}
                       onChange={handleChange}
                     />
                 </Form.Group>
-                {errors.password?.map((message, idx) =>
+                {errors.password1?.map((message, idx) => (
                   <Alert variant="warning" key={idx}>{message}</Alert>
-                )}
-                <Form.Group controlId="passwordConfirm">
+                ))}
+                <Form.Group controlId="password2">
                     <Form.Label className="d-none">confirm password</Form.Label>
                     <Form.Control
                       className={styles.Input}
                       type="password"
                       placeholder="Confirm Password"
-                      name="passwordConfirm"
-                      value={passwordConfirm}
+                      name="password2"
+                      value={password2}
                       onChange={handleChange}
                     />
                 </Form.Group>
-                {errors.passwordConfirm?.map((message, idx) =>
+                {errors.password2?.map((message, idx) => (
                   <Alert variant="warning" key={idx}>{message}</Alert>
-                )}
+                ))}
                 <Button className={`${btnStyles.Button}`} variant="primary" type="submit">
                     Sign Up
                 </Button>
-                {errors.non_field_errors?.map((message, idx) =>
-                  <Alert variant="warning" key={idx} className="mt-3">{message}</Alert>
-                )}
+                {errors.non_field_errors?.map((message, idx) => (
+                  <Alert variant="warning" key={idx}>{message}</Alert>
+                ))}
             </Form>
 
         </Container>
