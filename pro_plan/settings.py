@@ -54,7 +54,7 @@ SECRET_KEY = 'django-insecure-x-x5$q72&5!0t(a0k%$28tynky3v3c5iloye(q*&6fzblb90&n
 DEBUG = 'DEBUG' in os.environ
 
 ALLOWED_HOSTS = [
-    '8000-keywarden-project5produ-n9grukdx067.ws-eu104.gitpod.io',
+    '8000-keywarden-project5produ-8upsejwblym.ws-eu105.gitpod.io',
     os.environ.get('ALLOWED_HOST'),
     'localhost',
 ]
