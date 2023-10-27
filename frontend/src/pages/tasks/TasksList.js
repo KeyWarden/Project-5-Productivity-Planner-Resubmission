@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 import { useLocation } from "react-router-dom";
 import { axiosReq } from "../../api/axiosDefaults";
 
-function TasksPage() {
+function TasksList() {
   const [tasks, setTasks] = useState();
   const [hasLoaded, setHasLoaded] = useState(false);
   const { pathname } = useLocation();
@@ -45,4 +45,4 @@ function TasksPage() {
   );
 }
 
-export default TasksPage;
+export default TasksList;

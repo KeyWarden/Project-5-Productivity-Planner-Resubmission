@@ -1,12 +1,12 @@
 import { Button } from 'react-bootstrap';
 import btnStyles from "./styles/Button.module.css";
 import './Tasks.css';
-import TasksPage from './pages/tasks/TasksPage';
+import TasksList from './pages/tasks/TasksList';
 
 function Tasks() {
     return (
         <div>
-            <TasksPage />
+            <TasksList />
             <Button className={`${btnStyles.Button}`} variant="primary" href="/tasks/create">Add Task</Button>
         </div>
     )
