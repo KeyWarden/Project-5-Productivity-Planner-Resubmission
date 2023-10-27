@@ -13,10 +13,12 @@ import { Alert } from "react-bootstrap";
 
 function TaskCreateForm() {
     const [taskCreateData, setTaskCreateData] = useState({
-      title: ''
+      title: '',
+      due_at: '',
+      description: '',
     });
 
-    const { title } = taskCreateData;
+    const { title, due_at, description } = taskCreateData;
 
     const history = useHistory()
 
@@ -29,30 +31,52 @@ function TaskCreateForm() {
         })
     };
 
-    const handleSubmit = async (event) => {
-        event.preventDefault();
-        const formData = new FormData();
+  const handleSubmit = async (event) => {
+      event.preventDefault();
+      const formData = new FormData();
 
-        formData.append('title', title)
+      formData.append('title', title);
+      formData.append('due_at', due_at);
+      formData.append('description', description);
 
-        try {
-            const {data} = await axiosReq.post('/tasks/', formData);
-            history.push(`/tasks/${data.id}`)
-        } catch (err) {
-            setErrors(err.response?.data)
-        }
-    }
+      try {
+          const {data} = await axiosReq.post('/tasks/', formData);
+          history.push(`/tasks/${data.id}`)
+      } catch (err) {
+          setErrors(err.response?.data)
+      }
+  }
 
   const textFields = (
     <div className={`${styles.Container}`}>
         <Form.Group>
-            <Form.Label>Title</Form.Label>
+            <Form.Label>Title*</Form.Label>
             <Form.Control
+                required
                 className={styles.Input}
                 type="text"
                 name="title"
                 placeholder="Enter Title Here"
                 value={title}
+                onChange={handleChange}
+            />
+            <Form.Label>Due Date</Form.Label>
+            <Form.Control
+                className={styles.Input}
+                type="date"
+                name="due_at"
+                placeholder="Due Date: YYYY-MM-DD"
+                value={due_at || null}
+                onChange={handleChange}
+            />
+            <Form.Label>Description</Form.Label>
+            <Form.Control
+                className={styles.Input}
+                as="textarea"
+                rows={6}
+                name="description"
+                placeholder="Enter Description Here"
+                value={description || ""}
                 onChange={handleChange}
             />
         </Form.Group>
