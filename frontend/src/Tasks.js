@@ -10,7 +10,7 @@ function Tasks() {
             <TasksList 
                 message="No Tasks Found"
             />
-            <Button className={`${btnStyles.Button}`} variant="primary" href="/tasks/create">Add Task</Button>
+            <Button className={`${btnStyles.Button}`} variant="primary" href="/createtask">Add Task</Button>
         </div>
     )
 }

@@ -30,9 +30,9 @@ function App() {
             <Route exact path="/tasks" render={() => <Tasks />} />
             <Route exact path="/tasks/:id" render={() => <TaskPage />} />
             <Route exact path="/groups/:id" render={() => <GroupPage />} />
-            <Route exact path="/tasks/create" render={() => <TaskCreateForm />} />
+            <Route exact path="/createtask" render={() => <TaskCreateForm />} />
             <Route exact path="/groups" render={() => <Groups />} />
-            <Route exact path="/groups/create" render={() => <Groups />} />
+            <Route exact path="/creategroup" render={() => <Groups />} />
             <Route exact path="/signin" render={() => <SignInForm />} />
             <Route exact path="/signup" render={() => <SignUpForm />} />
             <Route render={() => <p>Page not Found!</p>} />

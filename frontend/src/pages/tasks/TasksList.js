@@ -40,7 +40,7 @@ function TasksList({ message }) {
       ))
       return (
         <>
-          <Table className={`${styles.table}`}>
+          <Table className={`${styles.table}`} responsive striped>
             <thead>
               <tr>
                 <th>Title</th>
