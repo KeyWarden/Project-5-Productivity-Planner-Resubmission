@@ -9,6 +9,7 @@ const Task = (props) => {
     const {
         id,
         owner,
+        is_owner,
         created_at,
         updated_at,
         title,
@@ -17,7 +18,6 @@ const Task = (props) => {
     } = props
 
     const currentUser = useCurrentUser();
-    const is_owner = currentUser?.username === owner
 
     if (is_owner) { 
         return (

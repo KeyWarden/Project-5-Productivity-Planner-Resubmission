@@ -28,11 +28,9 @@ function GroupPage() {
   }, [id])
 
   return (
-    <Row className="h-100">
-      <Col className="py-2 p-0 p-lg-2" lg={8}>
-        <Group {...group.results[0]} />
-      </Col>
-    </Row>
+    <div>
+      <Group {...group.results[0]} />
+    </div>
   );
 }
 

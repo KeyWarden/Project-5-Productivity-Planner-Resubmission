@@ -39,6 +39,8 @@ function App() {
           </Switch>
         </div>
       </Container>
+      <div className='App-footer-box'>
+      </div>
       <footer className='App-footer'>
         <h3>Contact Details</h3>
         <p>Phone Number: 01234 56789</p>

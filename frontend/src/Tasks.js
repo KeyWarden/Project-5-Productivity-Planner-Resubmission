@@ -4,9 +4,12 @@ import './Tasks.css';
 import TasksList from './pages/tasks/TasksList';
 
 function Tasks() {
+
     return (
         <div>
-            <TasksList />
+            <TasksList 
+                message="No Tasks Found"
+            />
             <Button className={`${btnStyles.Button}`} variant="primary" href="/tasks/create">Add Task</Button>
         </div>
     )
