@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 import { useLocation } from "react-router-dom";
 import { axiosReq } from "../../api/axiosDefaults";
 
-function GroupsPage() {
+function GroupsList() {
   const [groups, setGroups] = useState();
   const [hasLoaded, setHasLoaded] = useState(false);
   const { pathname } = useLocation();
@@ -45,4 +45,4 @@ function GroupsPage() {
   );
 }
 
-export default GroupsPage;
+export default GroupsList;

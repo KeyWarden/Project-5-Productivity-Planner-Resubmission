@@ -1,12 +1,12 @@
 import { Button } from 'react-bootstrap';
 import btnStyles from "./styles/Button.module.css";
 import './Groups.css';
-import GroupsPage from './pages/groups/GroupsPage';
+import GroupsList from './pages/groups/GroupsList';
 
 function Groups() {
     return (
         <div>
-            <GroupsPage />
+            <GroupsList />
             <Button className={`${btnStyles.Button}`} variant="primary" href="/groups/create">Add Group</Button>
         </div>
     )
