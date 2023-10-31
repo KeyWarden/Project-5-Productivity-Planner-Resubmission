@@ -2,8 +2,9 @@ import React from 'react'
 import styles from '../../styles/Task.module.css'
 import btnStyles from "../../styles/Button.module.css";
 import { Button, Card, Container } from 'react-bootstrap';
-import { Link } from 'react-router-dom/cjs/react-router-dom.min';
+import { Link, useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 import { useCurrentUser } from '../../contexts/CurrentUserContext';
+import { axiosRes } from '../../api/axiosDefaults';
 
 const Task = (props) => {
     const {
@@ -17,7 +18,16 @@ const Task = (props) => {
         description,
     } = props
 
-    const currentUser = useCurrentUser();
+    const history = useHistory();
+
+    const handleDelete = async () => {
+        try {
+            await axiosRes.delete(`/tasks/${id}/`)
+            history.push(`/tasks/`)
+        } catch (err) {
+            console.log(err)
+        }
+    }
 
     if (is_owner) { 
         return (
@@ -41,6 +51,7 @@ const Task = (props) => {
                     </Button>
                     <Button
                         className={`${btnStyles.Button}`}
+                        onClick={handleDelete}
                     >
                         Delete
                     </Button>

@@ -1,15 +1,9 @@
 import React, { useEffect, useState } from "react";
 
-import Form from "react-bootstrap/Form";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
-import Container from "react-bootstrap/Container";
-
 import styles from "../../styles/TasksList.module.css";
 import btnStyles from "../../styles/Button.module.css";
 import { useLocation } from "react-router-dom";
 import { axiosReq } from "../../api/axiosDefaults";
-import Task from "./Task";
 import { Button, Table } from "react-bootstrap";
 
 function TasksList({ message }) {
@@ -35,9 +29,6 @@ function TasksList({ message }) {
   console.log(tasks.results[0])
   
     if (tasks.results.length) {
-      tasks.results.map((task) => (
-        console.log(task.owner)
-      ))
       return (
         <>
           <Table className={`${styles.table}`} responsive striped>
@@ -79,7 +70,7 @@ function TasksList({ message }) {
                         <Button
                           className={`${btnStyles.Button}`}
                           variant="primary"
-                          href={`/tasks/${task.id}`}
+                          onClick={() => {}}
                         >
                           Delete
                         </Button>

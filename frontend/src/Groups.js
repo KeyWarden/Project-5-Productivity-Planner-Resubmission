@@ -7,7 +7,7 @@ function Groups() {
     return (
         <div>
             <GroupsList />
-            <Button className={`${btnStyles.Button}`} variant="primary" href="/groups/create">Add Group</Button>
+            <Button className={`${btnStyles.Button}`} variant="primary" href="/creategroup">Add Group</Button>
         </div>
     )
 }
