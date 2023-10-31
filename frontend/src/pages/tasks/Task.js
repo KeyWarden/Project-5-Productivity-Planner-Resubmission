@@ -35,6 +35,7 @@ const Task = (props) => {
                     {description && <Card.Text className={styles.Description}>{description}</Card.Text>}
                     <Button
                         className={`${btnStyles.Button}`}
+                          href={`/tasks/${id}/edit`}
                     >
                         Edit
                     </Button>

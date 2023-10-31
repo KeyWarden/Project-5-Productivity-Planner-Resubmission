@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
@@ -10,8 +10,9 @@ import btnStyles from "../../styles/Button.module.css";
 import { useHistory } from "react-router-dom";
 import { axiosReq, axiosRes } from "../../api/axiosDefaults";
 import { Alert } from "react-bootstrap";
+import { useParams } from "react-router-dom";
 
-function TaskCreateForm() {  
+function TaskEditForm() {  
     const [taskCreateData, setTaskCreateData] = useState({
       title: '',
       due_at: '',
@@ -20,7 +21,24 @@ function TaskCreateForm() {
 
     const { title, due_at, description } = taskCreateData;
 
-    const history = useHistory()
+    const history = useHistory();
+
+    const { id } = useParams();
+
+    useEffect(() => {
+        const handleMount = async () => {
+            try {
+                const {data} = await axiosReq.get(`/tasks/${id}/`);
+                const {title, due_at, description, is_owner} = data;
+
+                is_owner ? setTaskCreateData({title, due_at, description}) : history.push('/')
+            } catch (err) {
+                console.log(err);
+            }
+        }
+
+        handleMount();
+    }, [history, id])
 
   const [errors, setErrors] = useState({});
 
@@ -40,12 +58,12 @@ function TaskCreateForm() {
       formData.append('description', description);
 
       try {
-          const {data} = await axiosReq.post('/tasks/', formData);
+          await axiosReq.put(`/tasks/${id}/`, formData);
           history.push(`/tasks/`)
       } catch (err) {
           setErrors(err.response?.data)
       }
-      }
+      };
   
 
   const textFields = (
@@ -91,7 +109,7 @@ function TaskCreateForm() {
         cancel
       </Button>
       <Button className={`${btnStyles.Button}`} type="submit">
-        create
+        save
       </Button>
     </div>
   );
@@ -103,6 +121,6 @@ function TaskCreateForm() {
         </div>
     </Form>
   );
-}
+};
 
-export default TaskCreateForm;
+export default TaskEditForm;

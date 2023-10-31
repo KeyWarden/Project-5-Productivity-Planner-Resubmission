@@ -18,7 +18,6 @@ function TaskPage() {
                 axiosReq.get(`/tasks/${id}`)
             ])
             setTask({results: [task]})
-            console.log(task)
         } catch (err) {
             console.log(err)
         }

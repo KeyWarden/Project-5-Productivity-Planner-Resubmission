@@ -12,6 +12,7 @@ import TaskCreateForm from './pages/tasks/TaskCreateForm';
 import TaskPage from './pages/tasks/TaskPage';
 import Groups from './Groups';
 import GroupPage from './pages/groups/GroupPage';
+import TaskEditForm from './pages/tasks/TaskEditForm';
 
 
 
@@ -31,6 +32,7 @@ function App() {
             <Route exact path="/tasks/:id" render={() => <TaskPage />} />
             <Route exact path="/groups/:id" render={() => <GroupPage />} />
             <Route exact path="/createtask" render={() => <TaskCreateForm />} />
+            <Route exact path="/tasks/:id/edit" render={() => <TaskEditForm />} />
             <Route exact path="/groups" render={() => <Groups />} />
             <Route exact path="/creategroup" render={() => <Groups />} />
             <Route exact path="/signin" render={() => <SignInForm />} />

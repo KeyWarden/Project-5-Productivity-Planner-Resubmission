@@ -55,9 +55,9 @@ function TasksList({ message }) {
                 taskList.map((task) => (
                   <>
                     <tr key={task.id}>
-                      <td>{task.title}</td>
-                      <td>{task.due_at}</td>
-                      <td>
+                      <td key={task.id + "a"}>{task.title}</td>
+                      <td key={task.id + "b"}>{task.due_at}</td>
+                      <td key={task.id + "c"}>
                         <Button
                           className={`${btnStyles.Button}`}
                           variant="primary"
@@ -66,16 +66,16 @@ function TasksList({ message }) {
                           View
                         </Button>
                       </td>
-                      <td>
+                      <td key={task.id + "d"}>
                         <Button
                           className={`${btnStyles.Button}`}
                           variant="primary"
-                          href={`/tasks/${task.id}`}
+                          href={`/tasks/${task.id}/edit`}
                         >
                           Edit
                         </Button>
                       </td>
-                      <td>
+                      <td key={task.id + "e"}>
                         <Button
                           className={`${btnStyles.Button}`}
                           variant="primary"
