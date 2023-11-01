@@ -80,7 +80,7 @@ function GroupsList({ message }) {
                           onClick={ async () => {
                             try {
                                 await axiosRes.delete(`/groups/${group.id}/`);
-                                history.push(`/groups/`);
+                                history.push(`/deleted/groups/`);
                             } catch (err) {
                                 console.log(err)
                             }

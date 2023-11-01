@@ -26,7 +26,7 @@ const Task = (props) => {
     const handleDelete = async () => {
         try {
             await axiosRes.delete(`/groups/${id}/`);
-            history.push(`/groups/`);
+            history.push(`/deleted/groups/`);
         } catch (err) {
             console.log(err)
         }

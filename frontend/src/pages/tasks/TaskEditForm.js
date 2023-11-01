@@ -79,8 +79,9 @@ function TaskEditForm() {
                 value={title}
                 onChange={handleChange}
             />
-            <Form.Label>Due Date</Form.Label>
+            <Form.Label>Due Date*</Form.Label>
             <Form.Control
+                required
                 className={styles.Input}
                 type="date"
                 name="due_at"

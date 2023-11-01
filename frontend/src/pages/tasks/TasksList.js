@@ -75,7 +75,7 @@ function TasksList({ message }) {
                           onClick={task.is_owner ? async () => {
                             try {
                                 await axiosRes.delete(`/tasks/${task.id}/`);
-                                history.push(`/tasks/`);
+                                history.push(`/deleted/tasks/`);
                             } catch (err) {
                                 console.log(err)
                             }

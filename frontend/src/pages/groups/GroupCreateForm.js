@@ -63,6 +63,7 @@ function GroupCreateForm() {
               custom
               size="lg"
             >
+              <option value='1'></option>
               <GroupSelectTasks
                 message="You have no Tasks, and therefore cannot make any Groups"
               />

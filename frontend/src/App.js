@@ -16,6 +16,7 @@ import TaskEditForm from './pages/tasks/TaskEditForm';
 import GroupCreateForm from './pages/groups/GroupCreateForm';
 import GroupEditForm from './pages/groups/GroupEditForm';
 import Home from './Home';
+import Deleted from './components/Deleted';
 
 
 
@@ -37,6 +38,8 @@ function App() {
             <Route exact path="/createtask" render={() => <TaskCreateForm />} />
             <Route exact path="/tasks/:id/edit" render={() => <TaskEditForm />} />
             <Route exact path="/groups" render={() => <Groups />} />
+            <Route exact path="/deleted/tasks" render={() => <Deleted tasksOrGroups="tasks" />} />
+            <Route exact path="/deleted/groups" render={() => <Deleted tasksOrGroups="groups" />} />
             <Route exact path="/creategroup" render={() => <GroupCreateForm />} />
             <Route exact path="/groups/:id/edit" render={() => <GroupEditForm />} />
             <Route exact path="/signin" render={() => <SignInForm />} />
