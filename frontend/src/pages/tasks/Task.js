@@ -22,8 +22,8 @@ const Task = (props) => {
 
     const handleDelete = async () => {
         try {
-            await axiosRes.delete(`/tasks/${id}/`)
-            history.push(`/tasks/`)
+            await axiosRes.delete(`/tasks/${id}/`);
+            history.push(`/tasks/`);
         } catch (err) {
             console.log(err)
         }

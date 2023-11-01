@@ -2,9 +2,10 @@ import React from 'react'
 import styles from '../../styles/Group.module.css'
 import btnStyles from "../../styles/Button.module.css";
 import { Button, Card, Container } from 'react-bootstrap';
-import { Link } from 'react-router-dom/cjs/react-router-dom.min';
+import { Link, useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 import { useCurrentUser } from '../../contexts/CurrentUserContext';
 import GroupTaskTitle from './GroupTaskTitle';
+import { axiosRes } from '../../api/axiosDefaults';
 
 const Task = (props) => {
     const {
@@ -20,6 +21,16 @@ const Task = (props) => {
     const currentUser = useCurrentUser();
     const is_owner = currentUser?.username === owner
     const taskID = +task
+    const history = useHistory();
+    
+    const handleDelete = async () => {
+        try {
+            await axiosRes.delete(`/groups/${id}/`);
+            history.push(`/groups/`);
+        } catch (err) {
+            console.log(err)
+        }
+    }
 
     if (is_owner) { 
         return (
@@ -37,11 +48,13 @@ const Task = (props) => {
                     {description && <Card.Text className={styles.Description}>{description}</Card.Text>}
                     <Button
                         className={`${btnStyles.Button}`}
+                        href={`/groups/${id}/edit`}
                     >
                         Edit
                     </Button>
                     <Button
                         className={`${btnStyles.Button}`}
+                        onClick={handleDelete}
                     >
                         Delete
                     </Button>
