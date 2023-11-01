@@ -72,14 +72,17 @@ function TasksList({ message }) {
                         <Button
                           className={`${btnStyles.Button}`}
                           variant="primary"
-                          onClick={async () => {
+                          onClick={task.is_owner ? async () => {
                             try {
                                 await axiosRes.delete(`/tasks/${task.id}/`);
                                 history.push(`/tasks/`);
                             } catch (err) {
                                 console.log(err)
                             }
-                        }}
+                            } : (
+                              history.push(`/`)
+                              )
+                          }
                         >
                           Delete
                         </Button>
