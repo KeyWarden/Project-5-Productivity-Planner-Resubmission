@@ -1,10 +1,5 @@
 import React, { useEffect, useState } from "react";
 
-import Form from "react-bootstrap/Form";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
-import Container from "react-bootstrap/Container";
-
 import styles from "../../styles/TasksList.module.css";
 import btnStyles from "../../styles/Button.module.css";
 import { useLocation } from "react-router-dom";

@@ -11,8 +11,6 @@ const Task = (props) => {
     const {
         id,
         owner,
-        created_at,
-        updated_at,
         task,
         group_size,
         description,

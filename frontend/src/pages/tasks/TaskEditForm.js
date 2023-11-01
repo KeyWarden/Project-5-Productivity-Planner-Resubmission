@@ -8,7 +8,7 @@ import Container from "react-bootstrap/Container";
 import styles from "../../styles/TaskGroupCreateEditForm.module.css";
 import btnStyles from "../../styles/Button.module.css";
 import { useHistory } from "react-router-dom";
-import { axiosReq, axiosRes } from "../../api/axiosDefaults";
+import { axiosReq } from "../../api/axiosDefaults";
 import { Alert } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 

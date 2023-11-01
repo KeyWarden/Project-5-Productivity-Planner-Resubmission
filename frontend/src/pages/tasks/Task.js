@@ -3,16 +3,12 @@ import styles from '../../styles/Task.module.css'
 import btnStyles from "../../styles/Button.module.css";
 import { Button, Card, Container } from 'react-bootstrap';
 import { Link, useHistory } from 'react-router-dom/cjs/react-router-dom.min';
-import { useCurrentUser } from '../../contexts/CurrentUserContext';
 import { axiosRes } from '../../api/axiosDefaults';
 
 const Task = (props) => {
     const {
         id,
-        owner,
         is_owner,
-        created_at,
-        updated_at,
         title,
         due_at,
         description,

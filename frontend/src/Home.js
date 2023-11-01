@@ -1,6 +1,5 @@
 import React from 'react'
 import { useCurrentUser } from './contexts/CurrentUserContext'
-import { Container } from 'react-bootstrap';
 import './Home.css'
 
 const Home = () => {
