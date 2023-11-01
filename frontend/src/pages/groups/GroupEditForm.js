@@ -78,6 +78,8 @@ function GroupEditForm() {
               name="task"
               value={task}
               onChange={handleChange}
+              custom
+              size="lg"
             >
               <GroupSelectTasks
                 message="You have no Tasks, and therefore cannot make any Groups"
