@@ -66,7 +66,7 @@ function GroupsList({ message }) {
                         <Button
                           className={`${btnStyles.Button}`}
                           variant="primary"
-                          href={`/groups/${group.id}`}
+                          href={`/groups/${group.id}/edit`}
                         >
                           Edit
                         </Button>

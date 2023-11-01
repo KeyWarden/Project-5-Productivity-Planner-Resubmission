@@ -12,7 +12,7 @@ import { axiosReq, axiosRes } from "../../api/axiosDefaults";
 import { Alert } from "react-bootstrap";
 import GroupSelectTasks from "./GroupSelectTasks";
 
-function GroupCreateForm() {  
+function GroupCreateForm() {
     const [groupCreateData, setGroupCreateData] = useState({
       task: '',
       group_size: '',
@@ -60,6 +60,8 @@ function GroupCreateForm() {
               name="task"
               value={task}
               onChange={handleChange}
+              custom
+              size="lg"
             >
               <GroupSelectTasks
                 message="You have no Tasks, and therefore cannot make any Groups"
@@ -91,7 +93,7 @@ function GroupCreateForm() {
         ))}
       <Button
         className={`${btnStyles.Button}`}
-        href={`/tasks/`}
+        href={`/groups/`}
       >
         cancel
       </Button>

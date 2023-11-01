@@ -14,6 +14,8 @@ import Groups from './Groups';
 import GroupPage from './pages/groups/GroupPage';
 import TaskEditForm from './pages/tasks/TaskEditForm';
 import GroupCreateForm from './pages/groups/GroupCreateForm';
+import GroupEditForm from './pages/groups/GroupEditForm';
+import Home from './Home';
 
 
 
@@ -28,7 +30,7 @@ function App() {
       <Container>
         <div className='App-content'>
           <Switch>
-            <Route exact path="/" render={() => <h1>Home</h1>} />
+            <Route exact path="/" render={() => <Home />} />
             <Route exact path="/tasks" render={() => <Tasks />} />
             <Route exact path="/tasks/:id" render={() => <TaskPage />} />
             <Route exact path="/groups/:id" render={() => <GroupPage />} />
@@ -36,6 +38,7 @@ function App() {
             <Route exact path="/tasks/:id/edit" render={() => <TaskEditForm />} />
             <Route exact path="/groups" render={() => <Groups />} />
             <Route exact path="/creategroup" render={() => <GroupCreateForm />} />
+            <Route exact path="/groups/:id/edit" render={() => <GroupEditForm />} />
             <Route exact path="/signin" render={() => <SignInForm />} />
             <Route exact path="/signup" render={() => <SignUpForm />} />
             <Route render={() => <p>Page not Found!</p>} />

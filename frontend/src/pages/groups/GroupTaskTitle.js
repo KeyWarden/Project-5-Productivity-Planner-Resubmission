@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { axiosReq } from '../../api/axiosDefaults'
+import styles from '../../styles/GroupTaskTitle.module.css'
 
 
 const GroupTaskTitle = (props) => {
@@ -27,7 +28,7 @@ const GroupTaskTitle = (props) => {
       }, [id])
 
     return (
-        <div>{taskTitle}</div>
+        <div><a href={`/tasks/${id}`} className={`${styles.Link}`}>{taskTitle}</a></div>
     )
 }
 

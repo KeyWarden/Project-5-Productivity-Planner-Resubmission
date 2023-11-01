@@ -1,0 +1,10 @@
+.textBox {
+    background-color: lightblue;
+    padding: 5px;
+    border: 3px solid silver;
+}
+
+.textBox a {
+    color: darkblue;
+    font-weight: bold;
+}

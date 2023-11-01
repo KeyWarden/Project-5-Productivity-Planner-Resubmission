@@ -92,7 +92,7 @@ function TaskEditForm() {
             <Form.Control
                 className={styles.Input}
                 as="textarea"
-                rows={6}
+                rows={20}
                 name="description"
                 placeholder="Enter Description Here"
                 value={description}
