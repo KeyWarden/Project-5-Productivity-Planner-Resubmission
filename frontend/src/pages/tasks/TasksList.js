@@ -3,12 +3,14 @@ import React, { useEffect, useState } from "react";
 import styles from "../../styles/TasksList.module.css";
 import btnStyles from "../../styles/Button.module.css";
 import { useLocation } from "react-router-dom";
-import { axiosReq } from "../../api/axiosDefaults";
+import { axiosReq, axiosRes } from "../../api/axiosDefaults";
 import { Button, Table } from "react-bootstrap";
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
 function TasksList({ message }) {
   const [tasks, setTasks] = useState({ results: [] });
   const { pathname } = useLocation();
+  const history = useHistory();
 
   useEffect(() => {
     const handleMount = async () => {
@@ -70,7 +72,14 @@ function TasksList({ message }) {
                         <Button
                           className={`${btnStyles.Button}`}
                           variant="primary"
-                          onClick={() => {}}
+                          onClick={async () => {
+                            try {
+                                await axiosRes.delete(`/tasks/${task.id}/`);
+                                history.push(`/tasks/`);
+                            } catch (err) {
+                                console.log(err)
+                            }
+                        }}
                         >
                           Delete
                         </Button>

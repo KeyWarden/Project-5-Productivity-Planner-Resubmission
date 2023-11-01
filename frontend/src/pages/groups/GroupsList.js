@@ -8,13 +8,15 @@ import Container from "react-bootstrap/Container";
 import styles from "../../styles/TasksList.module.css";
 import btnStyles from "../../styles/Button.module.css";
 import { useLocation } from "react-router-dom";
-import { axiosReq } from "../../api/axiosDefaults";
+import { axiosReq, axiosRes } from "../../api/axiosDefaults";
 import { Button, Table } from "react-bootstrap";
 import GroupTaskTitle from "./GroupTaskTitle";
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
 function GroupsList({ message }) {
   const [groups, setGroups] = useState({ results: [] });
   const { pathname } = useLocation();
+  const history = useHistory();
 
   useEffect(() => {
     const handleMount = async () => {
@@ -75,7 +77,15 @@ function GroupsList({ message }) {
                         <Button
                           className={`${btnStyles.Button}`}
                           variant="primary"
-                          href={`/groups/${group.id}`}
+                          onClick={ async () => {
+                            try {
+                                await axiosRes.delete(`/groups/${group.id}/`);
+                                history.push(`/groups/`);
+                            } catch (err) {
+                                console.log(err)
+                            }
+                            }
+                          }
                         >
                           Delete
                         </Button>
