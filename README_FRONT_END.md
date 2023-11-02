@@ -1,37 +1,20 @@
 # PROJECT 5 - PRODUCTIVITY PLANNER 'PROPLANX' FRONT-END
 
-The goal of this site was to create a Productivity Planner That would allow people to do the following:
-
-* Create an account.
-* Create Tasks with due dates and descriptions.
-* Create Groups associated with those tasks, with member numbers and descriptions (if needed).
-
-Unfortunately, due to time constraints here at home, I have not been able to finish this project wholly. As such, I'm going to list below what has been made and what is yet to be made.
-
-👩🏻‍💻 View an example of this section [here](https://github.com/kera-cudmore/Bully-Book-Club#bully-book-club-website)
-
-Add a Blurb about the site here, what does it do, why did you build it?
+In all walks of life, one finds themselves burdened with tasks and projects that they must complete within a limited timeframe - sometimes as little as a week, sometimes as much as a year, but limited nonetheless - and while sometimes they may benefit from a group to work alongside, other times they must handle such matters alone. The ProPlanX app allows the user to record and manage such things. 
 
 ![ProPlanX](readme_images/responsive_design_example.png)
 
-Add a link to the live site here, for Milestone 1 this will be the GitHub Pages Link from when you deployed the site.
+If you wish to view the final project itself, it was deployed to Heroku, and can be found here: [Deployed ProPlanX Project](https://project-5-proplanx-536622b745e3.herokuapp.com/)
 
-If you want to add optional [shields.io](https://shields.io) badges to your README, I like to add them to this section.
+If alternatively you wish to view the GitHub repo for this project, it can be found here: [ProPlanX GitHub](https://github.com/KeyWarden/Project-5-Productivity-Planner-Resubmission)
+
+Finally, if you wish to view the README for the frontend of this project, you can do so here: [Backend README](README.md)
 
 ---
 
 ## CONTENTS
 
-* [Old](#old)
-
-* [User Experience](#user-experience-ux)
-  * [User Stories](#user-stories)
-
-* [Design](#design)
-  * [Colour Scheme](#colour-scheme)
-  * [Typography](#typography)
-  * [Imagery](#imagery)
-  * [Wireframes](#wireframes)
+* [User Stories](#user-stories)
 
 * [Features](#features)
   * [General Features on Each Page](#general-features-on-each-page)
@@ -40,187 +23,180 @@ If you want to add optional [shields.io](https://shields.io) badges to your READ
 
 * [Technologies Used](#technologies-used)
   * [Languages Used](#languages-used)
-  * [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
+  * [Frameworks Used](#frameworks-used)
 
-* [Deployment & Local Development](#deployment--local-development)
-  * [Deployment](#deployment)
-  * [Local Development](#local-development)
-    * [How to Fork](#how-to-fork)
-    * [How to Clone](#how-to-clone)
+* [Deployment](#deployment)
 
 * [Testing](#testing)
 
 * [Credits](#credits)
   * [Code Used](#code-used)
-  * [Content](#content)
-  * [Media](#media)
   * [Acknowledgments](#acknowledgments)
 
 ---
 
-## User Experience (UX)
+## User Stories
 
-👩🏻‍💻 View an example of a completed user experience section [here](https://github.com/kera-cudmore/Bully-Book-Club#user-experience-ux)
+A selection of User Stories were made for the purposes of both the frontend and backend of this project. Here, I'm going to cover those that influenced the frontend, as well as whether they were designated Must Have, Should Have, or Could Have:
 
-### User Stories
-
-Add your user stories here. You want to include first time visitors and returning visitors here as a minimum. Think about each group, and the experience and journey you want them to have on your site. It really helps to think about this before you start coding, and will really help with creating your wireframes.
-
-## Design
-
-👩🏻‍💻 View an example of a completed design section [here](https://github.com/kera-cudmore/earth-day-hackathon-2022#Design)
-
-### Colour Scheme
-
-Add all information about your colour scheme for your site here. You can explain why you choose the colours you did?
-
-I like to include a palette of the colour scheme here, my favourite site for creating a colour palette is [coolors](https://coolors.co/), but there are lots of other sites that also do the same thing, like [ColorSpace](https://mycolor.space/?hex=%23F5F5F5&sub=1), [Muzli Colors](https://colors.muz.li/), [Adobe Colour Wheel](https://color.adobe.com/create/color-wheel) and [Canva](https://www.canva.com/colors/color-palette-generator/) to name a few.
-
-### Typography
-
-If you've imported fonts to use in your project, add some information about them here. You can include information like:
-
-Why did you choose the font you have?
-Is this an accessibly friendly font?
-What weights have you included?
-
-I also like to include an image of the fonts chosen as a reference.
-
-[Google Fonts](https://fonts.google.com/) is a popular choice for importing fonts to use in your project, as it doesn't require you to download the fonts to use them.
-
-### Imagery
-
-Use this section to explain what sort of imagery you plan to use through your site.
-
-### Wireframes
-
-Add the images or links for your wireframes here.
-
-There are lots of different options to create your wireframes - Code Institute students can access [Balsamiq](https://balsamiq.com/) as part of the course.
-
-Some other options include [Figma](https://www.figma.com/), [AdobeXD](https://www.adobe.com/products/xd.html), [Sketch](https://www.sketch.com/?utm_source=google&utm_medium=cpc&adgroup=uxui&device=c&matchtype=e&utm_campaign=ADDICTMOBILE_SKETCH_GAD_DG_UK_T1_ALWAYS-ON_S_TRF_PROS_BRAND&utm_term=sketch&utm_source=google&utm_medium=cpc&utm_content=TOF_BRND__generic&hsa_acc=8710913982&hsa_cam=16831089317&hsa_grp=134620695759&hsa_ad=592060065319&hsa_src=g&hsa_tgt=kwd-14921750&hsa_kw=sketch&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gclid=Cj0KCQjwr4eYBhDrARIsANPywCjRIFn93DMezYnsyE5Fic_8l8kynJtut0GYMU01TiohHjwziFtlH0gaAhteEALw_wcB) and [Mockup](https://apps.apple.com/us/app/mockup-sketch-ui-ux/id1527554407) to name just a few! Or you can even go old school and get those wireframes completed using pen and paper. Just snap an image of the completed wireframes to add the images to the README.
+1. (Must Have) As a new customer, I would like to be immediately and clearly directed to the sign-up options so that I can get an account as quickly and easily as possible, as well as directed to sign-in similarly quickly so I can get back to managing my Tasks right away.
+2. (Must Have) As a returning customer, I would like to be presented with the ability to edit, remove, add, or otherwise change my Tasks upon being presented with them, so that I can easily manage them in detail.
+3. (Must Have) As a returning customer, I would like to be able to assign Tasks to Groups, in order to clearly show which Groups are assigned to which Tasks. And as a returning customer, I would like to be able to be able to easily edit, add, remove, or otherwise change my Groups, so that I can manage them in detail.
+4. (Must Have) As a new customer, I would like to be immediately presented with ways to see my Tasks as soon as I sign in, so that I can immediately see which Tasks I have remaining and manage them.
+5. (Must Have) As the client, I want the app to be easily viewable on a range of devices so as to not hinder the accessibilty of the app for non-desktop users.
+6. (Should Have) As the client, I want there to be a clear way for users to contact the admin team in the event they should need to do so, such as to request admin assistance.
+  * Shared With: As a returning customer, I would like to be able to contact the admin team in some way so as to get administrator support if a feature of the site is not functioning or I am currently indisposed.
+7. (Should Have) As a returning customer, I would like to be able to search through my Tasks in order to quickly find specific Tasks I am looking for.
+  * I was only able to partially implement this User Story due to time constraints. All that could be implemented was ordering the Tasks by Due Date, and filtering what Tasks and Groups the user can see so they only see the Tasks and Groups they created.
+8. (Should Have) As a returning/new customer, I would like to be notified if the deadline for my Tasks is approaching or has already passed, so as to be informed of how much time I have left to finish them, as well as if I need to delay them.
+  * This User Story had to be dropped due to time constaints.
+9. (Could Have) As a new customer, I would like to be able to access any socials or other web options for the app so that I can learn more about them if I should wish to do so.
+  * This User Story had to be dropped due to time constaints and lacking need.
 
 ## Features
 
-👩🏻‍💻 View an example of a completed user experience section [here](https://github.com/kera-cudmore/TheQuizArms#Features)
+This app is composed of 12 pages represented by various React components. The are as follows:
 
-This section can be used to explain what pages your site is made up of.
+* Home
+* Sign-in
+* Sign-up
+* Tasks
+* Groups
+* Specific Task
+* Specific Group
+* Create Task
+* Create Group
+* Edit Task
+* Edit Group
+* Not The Owner
+
+This app also uses certain reusable React components. These are:
+
+* NavBar.js - This displays the Navbar and whether or not the user is signed-in.
+* Deleted.js - This controls the DELETE functionality for Tasks and Groups.
+* GroupTaskTitle.js (found in the groups subfolder fo the pages folder) - This displays the Title of a Task a Group has attached to.
 
 ### General features on each page
 
-If there is a feature that appears on all pages of your site, include it here. Examples of what to include would the the navigation, a footer and a favicon.
+The Navbar and the Footer are the only general features found on every page.
 
-I then like to add a screenshot of each page of the site here, i use [amiresponsive](https://ui.dev/amiresponsive) which allows me to grab an image of the site as it would be displayed on mobile, tablet and desktop, this helps to show the responsiveness of the site.
+* Navbar - the exact appearance of the Navbar changes absed on whether or not the user is signed in as well as the screen size. When not signed in, the Navbar will only show links to the Home, Sign-in and Sign-up pages. When signed in, it will show links to the Home, Tasks and Groups pages, as well as a sign-out option.
+  * When the screen size is small enough, the Navbar will change to a burger icon that, when clicked, reveals a dropdown menu containing the current Navbar options, for accessibility reasons.
+* Footer - the Footer is a simple bar at the bottom of the screen that stays at the bottom regardless of screen or page size, and contains the contact details for the admin staff.
+
+### Home Page
+
+![Home Page - Signed Out](readme_images/home_signed_out.png)
+![Home Page - Signed In](readme_images/home_signed_in.png)
+
+### Sign-in/Sign-up
+
+![Sign-in Page](readme_images/sign_in.png)
+![Sign-Up Page](readme_images/sign_up.png)
+
+### Tasks/Groups
+
+![Tasks Page Pt 1](readme_images/tasks.png)
+![Tasks Page Pt 2](readme_images/tasks_2.png)
+![Groups Page](readme_images/groups.png)
+
+### Specific Task/Group
+
+![Specific Task Page](readme_images/specific_task.png)
+![Specific Group Page](readme_images/specific_group.png)
+
+### Create/Edit Task/Group
+
+![Create/Edit Task Page Pt 1](readme_images/edit_task.png)
+![Create/Edit Task Page Pt 2](readme_images/edit_group_2.png)
+![Create/Edit Group Page Pt 1](readme_images/edit_group.png)
+![Create/Edit Group Page Pt 2](readme_images/edit_group_2.png)
+
+### Not The Owner
+
+![Not The Owner Page](readme_images/not_the_owner.png)
 
 ### Future Implementations
 
-What features would you like to implement in the future on your site? Would you like to add more pages, or create login functionality? Add these plans here.
+In the future, I would like to:
+
+* add a Profile page, with options to change the username and password of the account.
+* give users the ability to delete their account directly, without needing to message the admins.
+* add a system to allow users to message the admins through the app.
+* add an option to allow users to optionally add images to their Tasks and Groups
+* add filtering and search options to the Tasks and Groups pages.
+* add a deadline indicator to Tasks that lets them know how close they are to the Due Date visually.
+* Change the Task Creation and Edit forms into a single reusable component instead of two separate components.
+* Change the Group Creation and Edit forms into a single reusable component instead of two separate components.
 
 ### Accessibility
 
-Be an amazing developer and get used to thinking about accessibility in all of your projects!
-
-This is the place to make a note of anything you have done with accessibility in mind. Some examples include:
-
-Have you used icons and added aria-labels to enable screen readers to understand these?
-Have you ensured your site meets the minimum contrast requirements?
-Have you chosen fonts that are dyslexia/accessible friendly?
-
-Code Institute have an amazing channel for all things accessibility (a11y-accessibility) I would highly recommend joining this channel as it contains a wealth of information about accessibility and what we can do as developers to be more inclusive.
+I have made sure throughout my project to ensure the app is reasonably useer friendly, such as by using semantic HTML and React Bootstrap components, as well as by ensuring that every page will adjust apporpriately to diffeerent screen sizes so that everything remains legible and visible. I have also worked to try and make the apps colours as sufficiently contrasting as I can.
 
 ## Technologies Used
 
-👩🏻‍💻 View an example of a completed Technologies Used section [here](https://github.com/kera-cudmore/Bully-Book-Club#Technologies-Used)
-
 ### Languages Used
 
-Make a note here of all the languages used in creating your project. For the first project this will most likely just be HTML & CSS.
+CSS, Python, Javascript, HTML, and JSX
 
-### Frameworks, Libraries & Programs Used
+### Frameworks Used
 
-Add any frameworks, libraries or programs used while creating your project.
+* [React Bootstrap](https://react-bootstrap-v4.netlify.app/)
 
-Make sure to include things like git, GitHub, the program used to make your wireframes, any programs used to compress your images, did you use a CSS framework like Bootstrap? If so add it here (add the version used).
+## Deployment
 
-A great tip for this section is to include them as you use them, that way you won't forget what you ended up using when you get to the end of your project.
+This Project was deployed on Heroku. In order to prepare the frontend for deployment, I had to perform the following action:
 
-## Deployment & Local Development
+* add (axios.defaults.baseURL = "/api";) to axiosDefault.js
 
-👩🏻‍💻 View an example of a completed Deployment & Local Development section [here](https://github.com/kera-cudmore/TheQuizArms#Deployment)
+Then, to finish preparing the overall project for deployment, I had to do the following:
 
-### Deployment
+1. Make a new directory called staticfiles, and then collect the admin and DRF staticfiles into it through the terminal.
+```
+mkdir staticfiles
+python3 manage.py collectstatic
+```
+2. Compile the React application and move its files also into the staticfiles directory.
+```
+cd frontend
+npm run build && mv build ../staticfiles/.
+```
+  * Note, sometimes it was necessary to repeat the second step if changes had to be made at the last minute to the React app. To do so, a different code was used to delete the existing build folder and rebuild it.
+  ```
+  npm run build && rm -rf ../staticfiles/build && mv build ../staticfiles/.
+  ```
+3. In the root directory make a new file called [runtime.txt](runtime.txt) and add the following line inside it:
+```
+python-3.9.16
+```
 
-Include instructions here on how to deploy your project. For your first project you will most likely be using GitHub Pages.
+Finally, all that was needed was to deploy the project to Heroku. This was done through the following steps:
 
-### Local Development
-
-The local development section gives instructions on how someone else could make a copy of your project to play with on their local machine. This section will get more complex in the later projects, and can be a great reference to yourself if you forget how to do this.
-
-#### How to Fork
-
-Place instructions on how to fork your project here.
-
-#### How to Clone
-
-Place instructions on how to clone your project here.
+1. In the root directory make a Procfile and fill it with the following code:
+```
+ release: python manage.py makemigrations && python manage.py migrate
+ web: gunicorn pro_plan.wsgi
+```
+2. On my Heroku account, I made a new app, titled 'project-5-proplanx'.
+3. In the Settings part of the dashboard, I opened Config Vars, and did the following:
+  * I ensured the ALLOWED_HOSTS and CLIENT_ORIGIN keys were set to the url of the Heroku App for [the combined project](https://project-5-proplanx-536622b745e3.herokuapp.com/).
+  * I ensured the DATABASE_URL key was set to the url for the ElephantSQL database.
+  * I ensured the SECRET_KEY was saved in the Config Vars section as well.
+4. I made sure my GitHub repo was fully up-to-date by pushing all remaining changes to the repo.
+5. I manually deployed my project from the Deploy tab in the Heroku app dashboard.
 
 ## Testing
 
-Start as you mean to go on - and get used to writing a TESTING.md file from the very first project!
-
-Testing requirements aren't massive for your first project, however if you start using a TESTING.md file from your first project you will thank yourself later when completing your later projects, which will contain much more information.
-
-Use this part of the README to link to your TESTING.md file - you can view the example TESTING.md file [here](milestone1-testing.md)
+For information on Testing for the frontend, please view the [Testing Document](TESTING_FRONT_END.md).
 
 ## Credits
-
-👩🏻‍💻 View an example of a completed Credits section [here](https://github.com/kera-cudmore/BookWorm#Credits)
-
-The Credits section is where you can credit all the people and sources you used throughout your project.
-
-### Code Used
 
 Some of the code for my front-end was originally written for my inital submission in another repository, which can be found [here](https://github.com/KeyWarden/Project-5-Productivity-Planner/tree/main).
 
 I also made use of code and templates from the Moments Walkthrough Project.
-
-If you have used some code in your project that you didn't write, this is the place to make note of it. Credit the author of the code and if possible a link to where you found the code. You could also add in a brief description of what the code does, or what you are using it for here.
-
-### Content
-
-Who wrote the content for the website? Was it yourself - or have you made the site for someone and they specified what the site was to say? This is the best place to put this information.
-
-###  Media
-
-If you have used any media on your site (images, audio, video etc) you can credit them here. I like to link back to the source where I found the media, and include where on the site the image is used.
 
 ###  Acknowledgments
 
 I would like to thank my fellow coders on the Code Institute Slack channels. Without their assistance, both big and small, I am not sure I would have been able to complete this on time.
 
 ---
-## OLD
-
-## CONTENTS
-
-* [Credits](#credits)
-  * [Code Used](#code-used)
-  * [Content](#content)
-
----
-
-### What I did
-
-I have made the majority of the basic framework of the frontend, allowing users to move between the various pages of the app. Users can successfully sign in, sign up, and sign out. What is available for a user changes based on their status - when not signed in they can only look at the Home page, sign in, or sign up. When signed in, the user is then able to see the Tasks and Groups pages as well as the Home page, and of course they can also sign out. The user can also create new tasks and upload them to the database. I have also managed to finish the backend.
-
-### What I haven't done
-
-I unfortunately have not managed to make it so the user can actually view the tasks they have created. I aslo have regettably failed to make it so the user can do anything with groups at this time. The user is also not currently able to edit or delete their account through the app, nor can they edit or delete any tasks or groups they have made. The user is also very limited in what they can post in regards to tasks, as they can currently only post the title of the tasks. The final missing feature is that the user cannot view individual tasks or groups in greater detail in the current version of the app.
-
-## Credits
-
-### Code Used
-
-Some of the code for my front-end was originally written for my inital submission in another repository, which can be found [here](https://github.com/KeyWarden/Project-5-Productivity-Planner/tree/main).
-
-I also made use of code and templates from the Moments Walkthrough Project.
