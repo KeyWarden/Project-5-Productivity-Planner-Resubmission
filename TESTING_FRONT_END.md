@@ -31,7 +31,11 @@ If you want to add optional shields.io badges to your TESTING file, I like to ad
 
 The Automated Testing includes all the testing that is carried out by a program, like W3C HTML validation.
 
+Remember to mention eslint testing went well, with 1 exception, GroupTaskTitle has eslint say that task is not reused when it seems to be. No actual problems occur in spite of this message, but it is worth mentioning.
+
 ###  W3C Validator
+
+Remember to mention that there was 1 error found during validation that could not be fixed. It was done because it was suggested on the internet that it could resolve the problem I had, and did seem to do so, so I do not have the time left to figure out how to resolve that without potentially breaking my app's appearance, but I do acknowledge it regardless. All other cases were fine.
 
 👩🏻‍💻 View an example of a completed W3C HTML & CSS validation section [here](https://github.com/kera-cudmore/TheQuizArms/blob/main/TESTING.md#W3C-Validator)
 
@@ -93,9 +97,13 @@ Full testing can be tedious, so it is great to try and break this part up into s
 
 ### Known Bugs
 
+mention 2 known bugs - the first with the Group List on the Group Page which occured in Development but not in the Deployed version as of yet - recreate screenshot using paint - the second when signing up - in at least some cases, despite the code telling the app to send you back to the home page being written correctly, it does not move you to another page, nor does it tell you you've succeeded in signing up. I do not have the time to figure this one out unfortunately.
+
 List (or put in a table) all known bugs on your site here as soon as you find them. This will prevent you from forgetting any at the end. Some (if not all) of these bugs will hopefully make their way over to the next section, solved bugs, as you progress through your project.
 
 ### Solved Bugs
+
+Mention every problem solved that was posted to Slack to the best of your ability, some should make good stories! One of them - the Delete Problem - should go in the other TESTING doc
 
 👩🏻‍💻View an example of a completed bugs section [here](https://github.com/kera-cudmore/BookWorm/blob/main/TESTING.md#BUGS)
 

@@ -41,7 +41,7 @@ function GroupCreateForm() {
       formData.append('description', description);
 
       try {
-          const {data} = await axiosReq.post('/groups/', formData);
+          await axiosReq.post('/groups/', formData);
           history.push(`/groups/`)
       } catch (err) {
           setErrors(err.response?.data)
