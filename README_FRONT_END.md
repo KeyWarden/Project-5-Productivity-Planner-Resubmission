@@ -8,7 +8,7 @@ If you wish to view the final project itself, it was deployed to Heroku, and can
 
 If alternatively you wish to view the GitHub repo for this project, it can be found here: [ProPlanX GitHub](https://github.com/KeyWarden/Project-5-Productivity-Planner-Resubmission)
 
-Finally, if you wish to view the README for the frontend of this project, you can do so here: [Backend README](README.md)
+Finally, if you wish to view the README for the backend of this project, you can do so here: [Backend README](README.md)
 
 ---
 
@@ -20,6 +20,12 @@ Finally, if you wish to view the README for the frontend of this project, you ca
   * [General Features on Each Page](#general-features-on-each-page)
   * [Future Implementations](#future-implementations)
   * [Accessibility](#accessibility)
+  * [Home Page](#home-page)
+  * [Sign-in/Sign-up](#sign-insign-up)
+  * [Tasks/Groups](#tasksgroups)
+  * [Specific Task/Group](#specific-taskgroup)
+  * [Create/Edit Task/Group](#createedit-taskgroup)
+  * [Not The Owner](#not-the-owner)
 
 * [Technologies Used](#technologies-used)
   * [Languages Used](#languages-used)

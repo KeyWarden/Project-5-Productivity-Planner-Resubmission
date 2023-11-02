@@ -193,7 +193,7 @@ Finally, all that was needed was to deploy the project to Heroku. This was done 
 
 ## Testing
 
-For information on Testing for the backend, please view the [Testing Document](TESTING.md).
+The CI Python Linter was used to validate all Python code. Outside of certain Line too Long warnings, which would have harmed readibility if resolved, no issues were found.
 
 ## Credits
 
